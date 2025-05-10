@@ -7,19 +7,24 @@ body {
     padding: 0;
 }
 header { 
-    background-color: rgb(42, 107, 204);
-    padding: 50px;
+    background-color: rgb(9, 106, 253);
+    padding: 80px;
+    text-align: center;
+    background-image: url("images/gray_hat.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
 }
 section { 
     background-color: rgb(219, 63, 211);
-    color: gray;
-    padding: 50px;
+    padding: 150px;
     display: flex;
     flex-direction: row;
 }
 footer {
     background-color: rgb(153, 40, 115);
-    padding: 50px;
+    padding: 40px;
 
 }
 div { 
@@ -37,6 +42,24 @@ li{
     display: inline-block;
     margin: 20px;
     background-color: aqua;
+    text-decoration: none;
+
+
+}
+a{
+    text-decoration: none;
+}
+header .logo a { 
+    background:  red;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-indent: -9999px;
+    background-image: url("images/Logo.jpg");
+    background-size: 60px;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 50%;
 
 
 }
