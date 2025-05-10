@@ -6,48 +6,18 @@ body {
     margin: 0;
     padding: 0;
 }
-header { 
+.banner { 
     background-color: rgb(9, 106, 253);
-    padding: 80px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     text-align: center;
     background-image: url("images/gray_hat.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center;
-
-}
-section { 
-    background-color: rgb(219, 63, 211);
-    padding: 150px;
-    display: flex;
-    flex-direction: row;
-}
-footer {
-    background-color: rgb(153, 40, 115);
-    padding: 40px;
-
-}
-div { 
-    background-color: red;
-    width: 250px;
-    margin: auto;
-}
-ul{
-margin: 0;
-padding: 0;
-list-style-type: none;
-background-color: blue;
-}
-li{
-    display: inline-block;
-    margin: 20px;
-    background-color: aqua;
-    text-decoration: none;
-
-
-}
-a{
-    text-decoration: none;
+    background-position:inherit;
+    
 }
 header .logo a { 
     background:  red;
@@ -62,4 +32,49 @@ header .logo a {
     border-radius: 50%;
 
 
+}
+section { 
+    background-color: rgb(219, 63, 211);
+    padding: 150px;
+    display: flex;
+    flex-direction: row;
+}
+footer {
+    background-color: rgb(153, 40, 115);
+    padding: 40px;
+
+}
+main .futureHats{ 
+    background-color: red;
+    margin: 5%;
+}
+div h1 {
+background-color: saddlebrown;
+font-size:xx-large;
+font-family: Arial, Helvetica, sans-serif;
+}
+main .futureHats .mostRecent{
+    background-image: url("/images/gorra_roja.jpg");
+    padding: 60px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+background-color: blue;
+}
+li{
+    display: inline-block;
+    margin: 20px;
+    background-color: aqua;
+    text-decoration: none;
+    font-style: italic;
+}
+a{
+    text-decoration: none;
 }
