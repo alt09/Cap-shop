@@ -25,36 +25,34 @@ header .logo a {
     position: relative;
     border-radius: 50%;
 }
-section { 
+section.middle-section{ 
     background-color: rgb(219, 63, 211);
+    background-image: url("images/banner.jpg");
+    background-repeat: no-repeat;
+    align-items: center;
+    background-size: 100%;
+    padding: 200px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+section.low-section {
     padding: 150px;
     display: flex;
     flex-direction: row;
+    background-color: aquamarine;
 }
 footer {
     background-color: rgb(153, 40, 115);
     padding: 40px;
 
 }
-main .futureHats{ 
-    background-color: crimson;
-    margin: 5%;
-    margin-bottom: -80px;
-}
-main .futureHats li{
-    margin-right: 10%;
-    margin-top: 80px;
-
-}
-main {
-    background-color: crimson;
-    color: black;
-}
 div h1 {
-background-color: crimson;
-font-size:xx-large;
-font-family: Arial, Helvetica, sans-serif;
-margin-top: -50px;
+    background-color: crimson;
+    font-size:xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -50px;
 }
 div.adds { 
     background-color: black;
@@ -62,43 +60,18 @@ div.adds {
     padding-left: 45%;
 }
 
-main .futureHats .mostRecent{
-    background-color:  crimson;
-    background-image: url("/images/gorra_roja.jpg");
-    text-indent: -990px;
-    padding: 60px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-main .futureHats li:hover{
-    transform: scale(2);
-}
-main .futureHats .recent{
-    background-color:  crimson;
-    background-image: url("/images/gorra_azul.jpg");
-    text-indent: -999990px;
-    padding: 60px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: flex;
-    flex-direction: column;
-    
-}
-main .futureHats .notRecent{
-    background-color:  crimson;
-    background-image: url("/images/gorra_amarilla.jpg");
-    text-indent: -9999px;
-    padding: 60px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: flex;
-    flex-direction: column;
-}
+
+
+
+
+
+
+
 ul{
-margin: 0;
-padding: 0;
-list-style-type: none;
-background-color: rgb(190, 39, 39);
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: rgb(190, 39, 39);
 }
 li{
     display: inline-block;
@@ -109,4 +82,102 @@ li{
 a{
     text-decoration: none;
     color: black;
+}
+section.low-section section.catalog {li{
+    color: black;
+    background-color: gray;
+}
+
+.cholo{ 
+    background-image:url("images/cholo_hat.jpg");
+    padding: 60px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}.rancho{
+    background-image:url("images/rancho_hat.jpg");
+    padding: 60px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+}.fresones{
+    background-image:url("images/fresa_hat.jpg");
+    padding: 60px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+}
+}
+
+section.low-section section.catalog h1{
+    color: black;
+    background-color: transparent;
+}
+section.low-section section.catalog {
+    padding: 150px;
+    display: flex;
+    flex-direction: row;
+    background-color: crimson;
+    margin: 5%;
+    margin-bottom: -0px;
+}
+
+main {
+    
+    section.futureHats{
+
+        li{
+            margin-right: 10%;
+            margin-top: 80px;
+        }
+
+        li.mostRecent{
+        background-color:  crimson;
+        background-image: url("/images/gorra_roja.jpg");
+        text-indent: -990px;
+        padding: 60px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        }
+
+        li.recent{
+        background-color:  crimson;
+        background-image: url("/images/gorra_azul.jpg");
+        text-indent: -999990px;
+        padding: 60px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: flex;
+        flex-direction: column;
+        }
+        
+        li.notRecent{
+        background-color:  crimson;
+        background-image: url("/images/gorra_amarilla.jpg");
+        text-indent: -9999px;
+        padding: 60px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: flex;
+        flex-direction: column;
+        }
+
+        li:hover{
+            transform: scale(2);
+        }
+
+    padding: 150px;
+    display: flex;
+    flex-direction: row;
+    background-color: crimson;
+    margin: 5%;
+    margin-bottom: -80px;
+    }
+
+background-color: crimson;
+color: black;
 }
