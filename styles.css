@@ -167,6 +167,16 @@ body {
                     text-indent: -999999999999px
                 }
 
+                .michael_cat{
+                    background-image:url("images/michael_cat.jpg");
+                    padding: 100px;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    text-indent: -999999999999px
+                }
+
                 h1{
                 color: black;
                 background-color: transparent;
@@ -175,7 +185,7 @@ body {
                 
                 }
 
-            padding: 15%;
+            padding: 10%;
             padding-right: 550px;
             display: flex;
             flex-direction: row;
