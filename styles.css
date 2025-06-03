@@ -61,7 +61,7 @@ body {
             li.mostRecent{
             background-color:  crimson;
             background-image: url("/images/gorra_roja.jpg");
-            text-indent: -990px;
+            text-indent: -999990px;
             padding: 60px;
             background-repeat: no-repeat;
             background-size: 100%;
@@ -70,7 +70,7 @@ body {
             li.recent{
             background-color:  crimson;
             background-image: url("/images/gorra_azul.jpg");
-            text-indent: -999990px;
+            text-indent: -999999990px;
             padding: 60px;
             background-repeat: no-repeat;
             background-size: 100%;
@@ -81,7 +81,7 @@ body {
             li.notRecent{
             background-color:  crimson;
             background-image: url("/images/gorra_amarilla.jpg");
-            text-indent: -9999px;
+            text-indent: -999999px;
             padding: 60px;
             background-repeat: no-repeat;
             background-size: 100%;
@@ -90,7 +90,8 @@ body {
             }
 
             li:hover{
-                transform: scale(2);
+                transform: scale(2)scaleX(-1)
+
             }
 
             div {
@@ -116,7 +117,7 @@ body {
         background-image: url("images/banner.jpg");
         background-repeat: no-repeat;
         align-items: center;
-        background-size: 100%;
+        background-size: 1950px;
         padding: 200px;
         display: flex;
         flex-direction: row;
@@ -132,7 +133,8 @@ body {
                 margin: 5%;
                 }
                 li:hover{
-                    transform: scale(1.5);
+                    transform: scale(1.5) scaleX(-1);
+
                 }
 
                 .cholo{ 
@@ -169,10 +171,11 @@ body {
                 color: black;
                 background-color: transparent;
                 padding-right: 2cm;
+                font-size:xx-large;
                 
                 }
 
-            padding: 150px;
+            padding: 15%;
             padding-right: 550px;
             display: flex;
             flex-direction: row;
@@ -194,6 +197,15 @@ body {
     footer {
         background-color: rgb(153, 40, 115);
         padding: 40px;
+
+        ul{
+
+            li{
+                margin-left: 15%;
+                display: inline-block; 
+
+            }
+        }
     } 
       
 background-color:rgb(58, 58, 58);
