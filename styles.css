@@ -1,183 +1,204 @@
-
 body {
-    background-color:rgb(58, 58, 58);
+
+    div.adds { 
+    background-color: black;
     font-family: Arial, Helvetica, sans-serif;
-    color:white;
-    margin: 0;
-    padding: 0;
-}
-.banner { 
+    padding-left: 45%;
+    }
+    
+    header.banner{ 
+
+        .logo a { 
+            background: rgb(190, 39, 39);
+            display:inline-flex;
+            height: 60px;
+            width: 60px;
+            text-indent: -9999px;
+            background-image: url("images/Logo.jpg");
+            background-size: 60px;
+            background-repeat: no-repeat;
+            position: relative;
+            border-radius: 50%;
+        }
+
+        ul{
+
+            li{
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+
+                display: inline-block;
+                margin: 20px;
+                background-color: rgb(190, 39, 39);
+                text-decoration: none;
+            }
+
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            background-color:rgb(190, 39, 39);
+        }
+
     background-color: rgb(190, 39, 39);
     padding-left: 2.5cm;
     padding-right: 2.5cm;
     background-size: 100%;
-    color: aqua;    
-}
-header .logo a { 
-    background: rgb(190, 39, 39);
-    display:inline-flex;
-    height: 60px;
-    width: 60px;
-    text-indent: -9999px;
-    background-image: url("images/Logo.jpg");
-    background-size: 60px;
-    background-repeat: no-repeat;
-    position: relative;
-    border-radius: 50%;
-}
-section.middle-section{ 
-    background-color: rgb(219, 63, 211);
-    background-image: url("images/banner.jpg");
-    background-repeat: no-repeat;
-    align-items: center;
-    background-size: 100%;
-    padding: 200px;
-    display: flex;
-    flex-direction: row;
-
-}
-
-section.low-section {
-    padding: 150px;
-    display: flex;
-    flex-direction: row;
-    background-color: aquamarine;
-}
-footer {
-    background-color: rgb(153, 40, 115);
-    padding: 40px;
-
-}
-div h1 {
-    background-color: crimson;
-    font-size:xx-large;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: -50px;
-}
-div.adds { 
-    background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 45%;
-}
-
-
-
-
-
-
-
-
-ul{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    background-color: rgb(190, 39, 39);
-}
-li{
-    display: inline-block;
-    margin: 20px;
-    background-color: rgb(190, 39, 39);
-    text-decoration: none;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-section.low-section section.catalog {li{
-    color: black;
-    background-color: gray;
-}
-
-.cholo{ 
-    background-image:url("images/cholo_hat.jpg");
-    padding: 60px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: flex;
-    flex-direction: column;
-    
-}.rancho{
-    background-image:url("images/rancho_hat.jpg");
-    padding: 60px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: flex;
-    flex-direction: column;
-}.fresones{
-    background-image:url("images/fresa_hat.jpg");
-    padding: 60px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: flex;
-    flex-direction: column;
-}
-}
-
-section.low-section section.catalog h1{
-    color: black;
-    background-color: transparent;
-}
-section.low-section section.catalog {
-    padding: 150px;
-    display: flex;
-    flex-direction: row;
-    background-color: crimson;
-    margin: 5%;
-    margin-bottom: -0px;
-}
-
-main {
-    
-    section.futureHats{
-
-        li{
-            margin-right: 10%;
-            margin-top: 80px;
-        }
-
-        li.mostRecent{
-        background-color:  crimson;
-        background-image: url("/images/gorra_roja.jpg");
-        text-indent: -990px;
-        padding: 60px;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        }
-
-        li.recent{
-        background-color:  crimson;
-        background-image: url("/images/gorra_azul.jpg");
-        text-indent: -999990px;
-        padding: 60px;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        display: flex;
-        flex-direction: column;
-        }
-        
-        li.notRecent{
-        background-color:  crimson;
-        background-image: url("/images/gorra_amarilla.jpg");
-        text-indent: -9999px;
-        padding: 60px;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        display: flex;
-        flex-direction: column;
-        }
-
-        li:hover{
-            transform: scale(2);
-        }
-
-    padding: 150px;
-    display: flex;
-    flex-direction: row;
-    background-color: crimson;
-    margin: 5%;
-    margin-bottom: -80px;
+    color: aqua;   
     }
 
-background-color: crimson;
-color: black;
+    main {
+        
+        section.futureHats{
+
+            li{
+                margin-right: 10%;
+                margin-top: 80px;
+                display: inline-block;
+            }
+
+            li.mostRecent{
+            background-color:  crimson;
+            background-image: url("/images/gorra_roja.jpg");
+            text-indent: -990px;
+            padding: 60px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            }
+
+            li.recent{
+            background-color:  crimson;
+            background-image: url("/images/gorra_azul.jpg");
+            text-indent: -999990px;
+            padding: 60px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            display: flex;
+            flex-direction: column;
+            }
+            
+            li.notRecent{
+            background-color:  crimson;
+            background-image: url("/images/gorra_amarilla.jpg");
+            text-indent: -9999px;
+            padding: 60px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            display: flex;
+            flex-direction: column;
+            }
+
+            li:hover{
+                transform: scale(2);
+            }
+
+            div {
+
+                h1 {
+                background-color: crimson;
+                font-size:xx-large;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: -50px;
+                }
+
+            }
+        padding: 150px;
+        display: flex;
+        flex-direction: row;
+        background-color: crimson;
+        margin: 5%;
+        margin-bottom: -80px;
+        }
+
+        section.middle-section{ 
+        background-color: rgb(219, 63, 211);
+        background-image: url("images/banner.jpg");
+        background-repeat: no-repeat;
+        align-items: center;
+        background-size: 100%;
+        padding: 200px;
+        display: flex;
+        flex-direction: row;
+        }
+
+        section.low-section {
+    
+            section.catalog {
+
+                li{
+                color: black;
+                background-color: gray;
+                margin: 5%;
+                }
+                li:hover{
+                    transform: scale(1.5);
+                }
+
+                .cholo{ 
+                    background-image:url("images/cholo_hat.jpg");
+                    padding: 100px;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    text-indent: -999999999999px
+                }
+                
+                .rancho{
+                    background-image:url("images/rancho_hat.jpg");
+                    padding: 100px;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    text-indent: -999999999999px
+                }
+                
+                .fresones{
+                    background-image:url("images/fresa_hat.jpg");
+                    padding: 100px;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    text-indent: -999999999999px
+                }
+
+                h1{
+                color: black;
+                background-color: transparent;
+                padding-right: 2cm;
+                
+                }
+
+            padding: 150px;
+            padding-right: 550px;
+            display: flex;
+            flex-direction: row;
+            background-color: crimson;
+          
+            }
+
+        padding: 150px;
+        display: flex;
+        flex-direction: row;
+        background-color: aquamarine;
+
+        }
+
+    background-color: crimson;
+    color: black;
+    }
+
+    footer {
+        background-color: rgb(153, 40, 115);
+        padding: 40px;
+    } 
+      
+background-color:rgb(58, 58, 58);
+font-family: Arial, Helvetica, sans-serif;
+color:white;
+margin: 0;
+padding: 0;
 }
