@@ -1,9 +1,11 @@
 body {
 
     div.adds { 
-    background-color: black;
+    background-color: rgb(255, 193, 122);;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 1px;
     padding-left: 45%;
+    margin-top: -15px;
     }
     
     header.banner{ 
@@ -31,17 +33,17 @@ body {
 
                 display: inline-block;
                 margin: 20px;
-                background-color: rgb(190, 39, 39);
+                background-color: white;
                 text-decoration: none;
             }
 
             margin: 0;
-            padding: 0;
+            padding: 0px;
             list-style-type: none;
-            background-color:rgb(190, 39, 39);
+            background-color:white;
         }
 
-    background-color: rgb(190, 39, 39);
+    background-color: white;
     padding-left: 2.5cm;
     padding-right: 2.5cm;
     background-size: 100%;
@@ -59,7 +61,7 @@ body {
             }
 
             li.mostRecent{
-            background-color:  crimson;
+            background-color:  white;
             background-image: url("/images/gorra_roja.jpg");
             text-indent: -999990px;
             padding: 60px;
@@ -68,7 +70,7 @@ body {
             }
 
             li.recent{
-            background-color:  crimson;
+            background-color:  white;
             background-image: url("/images/gorra_azul.jpg");
             text-indent: -999999990px;
             padding: 60px;
@@ -79,7 +81,7 @@ body {
             }
             
             li.notRecent{
-            background-color:  crimson;
+            background-color:  white;
             background-image: url("/images/gorra_amarilla.jpg");
             text-indent: -999999px;
             padding: 60px;
@@ -97,7 +99,7 @@ body {
             div {
 
                 h1 {
-                background-color: crimson;
+                background-color: white;
                 font-size:xx-large;
                 font-family: Arial, Helvetica, sans-serif;
                 margin-top: -50px;
@@ -107,13 +109,13 @@ body {
         padding: 150px;
         display: flex;
         flex-direction: row;
-        background-color: crimson;
+        background-color: white;
         margin: 5%;
         margin-bottom: -80px;
         }
 
         section.middle-section{ 
-        background-color: rgb(219, 63, 211);
+        background-color: white;
         background-image: url("images/banner.jpg");
         background-repeat: no-repeat;
         align-items: center;
@@ -124,88 +126,115 @@ body {
         }
 
         section.low-section {
+
+            div.discounts{
+            h4{
+            background-color: black;
+
+            color: white;
+            text-align: center;
+            
+            margin-top: -150px;
+            margin-left:-300%;
+            margin-right: -1577%;
+            }
+        }
+
     
             section.catalog {
 
-                li{
+                li.first_row{
+
+                    div{
+                    color: black;
+                    background-color: white;
+                    margin: 2%;
+                    display: inline-block;
+                    margin-top:-1cm ;
+                    }
+                    
+                    div:hover{
+                        transform: scale(1.5) scaleX(-1);
+
+                    }
+                    
+                    .cholo{ 
+                        background-image:url("images/cholo_hat.jpg");
+                        padding: 100px;
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        text-indent: -999990px;
+                    }
+                    
+                    .rancho{
+                        background-image:url("images/rancho_hat.jpg");
+                        padding: 100px;
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        text-indent:-9999999999px
+                    }
+                    
+                    .fresones{
+                        background-image:url("images/fresa_hat.jpg");
+                        padding: 100px;
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        text-indent: -999999999999px
+                    }
+
+                    .michael_cat{
+                        background-image:url("images/michael_cat.jpg");
+                        padding: 100px;
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        text-indent: -999999999999px
+                    }
                 color: black;
-                background-color: gray;
+                background-color: white;
                 margin: 5%;
-                }
-                li:hover{
-                    transform: scale(1.5) scaleX(-1);
-
-                }
-
-                .cholo{ 
-                    background-image:url("images/cholo_hat.jpg");
-                    padding: 100px;
-                    background-repeat: no-repeat;
-                    background-size: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    text-indent: -999999999999px
-                }
+                margin-right: -750px;
+                margin-top:-1cm ;
+                display: flex;
+                flex-direction:row;
+                flex-wrap: wrap;
                 
-                .rancho{
-                    background-image:url("images/rancho_hat.jpg");
-                    padding: 100px;
-                    background-repeat: no-repeat;
-                    background-size: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    text-indent: -999999999999px
-                }
-                
-                .fresones{
-                    background-image:url("images/fresa_hat.jpg");
-                    padding: 100px;
-                    background-repeat: no-repeat;
-                    background-size: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    text-indent: -999999999999px
-                }
-
-                .michael_cat{
-                    background-image:url("images/michael_cat.jpg");
-                    padding: 100px;
-                    background-repeat: no-repeat;
-                    background-size: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    text-indent: -999999999999px
                 }
 
                 h1{
                 color: black;
-                background-color: transparent;
-                padding-right: 2cm;
+                background-color: white;
+                margin-top: -4.5cm;
+                margin-left: -3.5cm;
                 font-size:xx-large;
                 
                 }
 
             padding: 10%;
-            padding-right: 550px;
-            display: flex;
-            flex-direction: row;
-            background-color: crimson;
+            padding-right: 900px;
+            padding-bottom:00px ;
+            display: inline-flex;
+            flex-direction:row;
+            background-color:white;
           
             }
 
         padding: 150px;
         display: flex;
         flex-direction: row;
-        background-color: aquamarine;
+        background-color: white;
 
         }
 
-    background-color: crimson;
+    background-color: white;
     color: black;
     }
 
     footer {
-        background-color: rgb(153, 40, 115);
+        background-color: rgb(255, 121, 121);
         padding: 40px;
 
         ul{
@@ -218,9 +247,9 @@ body {
         }
     } 
       
-background-color:rgb(58, 58, 58);
+background-color:rgb(255, 193, 122);
 font-family: Arial, Helvetica, sans-serif;
-color:white;
+color:black;
 margin: 0;
 padding: 0;
 }
