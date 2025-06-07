@@ -1,8 +1,8 @@
 body {
 
     div.adds {
-        background-color: rgb(255, 193, 122);
-        ;
+        background-color: black;
+        color: white;
         font-family: Arial, Helvetica, sans-serif;
         padding: 1px;
         padding-left: 45%;
@@ -126,20 +126,17 @@ body {
             flex-direction: row;
         }
 
+        div.discounts {
+    background-color:rgb(255, 193, 122);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .1%;
+    padding-left: 45%;
+    margin-top: -15px;
+            
+        }
         section.low-section {
 
-            div.discounts {
-                h4 {
-                    background-color: black;
-
-                    color: white;
-                    text-align: center;
-
-                    margin-top: -150px;
-                    margin-left: -300%;
-                    margin-right: -1648%;
-                }
-            }
 
 
             section.catalog {
@@ -239,16 +236,19 @@ body {
                         flex-direction: row;
                         background-color: white;
                     }
+
                     div.horarios {
                         padding-left: 75%;
                         margin-top: -10%;
 
                     }
-                    iframe{
-                        width: 1250px;
+
+                    iframe {
+                        width: 1600px;
                         height: 450px;
                     }
-                    margin-top: -10% ;
+
+                    margin-top: -10%;
                     background-color: transparent;
                 }
             }
