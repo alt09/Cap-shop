@@ -244,23 +244,25 @@ body {
                     }
 
                     iframe {
-                        width: 1600px;
+                        width: 100%;
                         height: 450px;
                     }
 
                     margin-top: -10%;
-                    background-color: transparent;
+                    background-color:transparent;
                 }
             }
-
+                padding-left: 10%;
+                padding-right: 10%;
         }
 
         background-color: white;
         color: black;
+        
     }
 
     footer {
-        background-color: rgb(255, 121, 121);
+        background-color: transparent;
         padding: 40px;
 
         ul {
