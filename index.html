@@ -1,143 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>
-        Index
-    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap Shop</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <div class="adds">
-        <h4 class>
-            comming soon 5% discount
-        </h4>
+        <h4>Coming soon 5% discount</h4>
     </div>
 
-    <header class=" banner">
-        <nav>
-            <ul>
-                <li class="logo">
-                    <a href="Index.html">
-                        Cap Shop Logo
-                    </a>
-                </li>
-                <li>
-                    <a href="Index.html">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="Pages/Contact.html">
-                        Contact
-                    </a>
-                </li>
-
-
-                <li>
-                    <a href="Pages/Locations.html">
-                        Locations
-                    </a>
-                </li>
-
-                <li>
-                    <a>
-                        Accessories
-                    </a>
-                </li>
-
-                <li>
-                    <a>
-                        Collections
-                    </a>
-                </li>
-
-            </ul>
+    <header class="banner">
+        <div class="logo">
+            <a href="#">Cap Shop Logo</a>
+        </div>
+        <button class="toggle-button">☰</button>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="Pages/Contact.html">Contact</a></li>
+            <li><a href="Pages/Locations.html">Locations</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Collections</a></li>
+        </ul>
     </header>
-    <main class="main">
+
+    <main>
         <section class="futureHats">
             <div>
-                <h1> comming soon</h1>
+                <h1>Coming Soon</h1>
             </div>
-            <li class="mostRecent">
-                gorra roja
-            </li>
-            <li class="recent">
-                gorra azul
-            </li>
-            <li class="notRecent">
-                gorra amarilla
-            </li>
+            <li class="mostRecent" data-text="Gorra Roja">Gorra Roja</li>
+            <li class="recent" data-text="Gorra Azul">Gorra Azul</li>
+            <li class="notRecent" data-text="Gorra Amarilla">Gorra Amarilla</li>
         </section>
-        
-        <div class="discounts">
-            <h3>
-                4%-75% off on used hats
-            </h3>
-        </div>
 
-        <section class="middle-section"></section>
+        <section class="middle-section">
+            <h4>4%-75% off on unused hats</h4>
+        </section>
 
         <section class="low-section">
-
-
-              <section class="catalog">
-
-                <div>
-                    <h1 class="catalog"> catalog</h1>
-                </div>
+            <section class="catalog">
+                <h1>Catalog</h1>
                 <li class="first_row">
-                    <div class="cholo">
-                        Cholo hats
-                    </div>
-                    <div class="rancho">
-                        Rancho hats
-                    </div>
-                    <div class="fresones">
-                        fresa hats
-                    </div>
-                    <div class="michael_cat">
-                        micahel cat
-                    </div>
-                    <div class="michael_cat">
-                        micahel cat
-                    </div>
-                    <div class="michael_cat">
-                        micahel cat
-                    </div>
-                    <div class="michael_cat">
-                        micahel cat
-                    </div>
-                    <div class="michael_cat">
-                        micahel cat
-                    </div>
+                    <div class="cholo" data-text="Cholo Hats">Cholo Hats</div>
+                    <div class="rancho" data-text="Rancho Hats">Rancho Hats</div>
+                    <div class="fresones" data-text="Fresa Hats">Fresa Hats</div>
+                    <div class="michael_cat" data-text="Michael Cat">Michael Cat</div>
+                    <div class="michael_cat" data-text="Michael Cat">Michael Cat</div>
+                    <div class="michael_cat" data-text="Michael Cat">Michael Cat</div>
+                    <div class="michael_cat" data-text="Michael Cat">Michael Cat</div>
+                    <div class="michael_cat" data-text="Michael Cat">Michael Cat</div>
                 </li>
             </section>
         </section>
-    </main>
-    <footer class=" contentInfo">
-        lol this is a foot?
-        <section class=contact-info>
+
+        <footer>
+            <p>lol this is a foot?</p>
             <ul>
-                <li>
-                    Terms and conditions
-                </li>
-                <li>
-                    Privacy policy
-                </li>
-                <li>
-                    FAQ
-                </li>
-                <li>
-                    About us
-                </li>
+                <li><a href="#">Terms and conditions</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">About us</a></li>
             </ul>
-        </section>
-    </footer>
+        </footer>
+    </main>
 
+    <script src="script.js"></script>
 </body>
-
-
-
 </html>

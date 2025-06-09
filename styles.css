@@ -1,285 +1,457 @@
 body {
+    background-color: rgb(255, 193, 122);
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    div.adds {
-        background-color: black;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        padding: 1px;
-        padding-left: 45%;
-        margin-top: -15px;
+/* Advertisement banner */
+div.adds {
+    background-color: rgb(255, 193, 122);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+}
+
+/* Header banner */
+header.banner {
+    background-color: white;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header.banner .logo a {
+    background: rgb(190, 39, 39);
+    display: inline-block;
+    height: clamp(40px, 5vw, 50px);
+    width: clamp(40px, 5vw, 50px);
+    background-image: url("../images/Logo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    text-indent: -9999px;
+    margin-left: 1rem;
+}
+
+header.banner .toggle-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+header.banner ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header.banner ul li {
+    margin: 0.3rem 0.5rem;
+    background-color: white;
+    padding: 0.3rem 0.8rem;
+}
+
+header.banner ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    font-weight: bold;
+}
+
+/* Main content */
+main {
+    background-color: white;
+    color: black;
+    padding: 1rem 0;
+}
+
+/* Future hats section */
+section.futureHats {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+section.futureHats::-webkit-scrollbar {
+    height: 6px;
+}
+
+section.futureHats::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+section.futureHats::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+section.futureHats::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+section.futureHats li {
+    display: inline-flex;
+    flex: 0 0 clamp(90px, 20vw, 160px);
+    margin: 0.3rem;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: clamp(1rem, 4vw, 2rem);
+    min-height: 90px;
+    position: relative;
+    text-indent: -9999px;
+    z-index: 0; /* Establish stacking context */
+    overflow: visible; /* Prevent clipping */
+}
+
+section.futureHats li::after {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: black;
+    font-size: clamp(0.7rem, 1.8vw, 0.9rem);
+    text-align: center;
+    padding: 0.4rem;
+    text-transform: capitalize;
+    line-height: 1.2;
+    z-index: 1000; /* Higher z-index for safety */
+    display: block;
+}
+
+section.futureHats li.mostRecent {
+    background-image: url("../images/gorra_roja.jpg");
+}
+
+section.futureHats li.recent {
+    background-image: url("../images/gorra_azul.jpg");
+}
+
+section.futureHats li.notRecent {
+    background-image: url("../images/gorra_amarilla.jpg");
+}
+
+section.futureHats li:hover {
+    transform: scale(1.1);
+}
+
+section.futureHats div h1 {
+    background-color: white;
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0.5rem 1rem;
+}
+section.contact-form{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+/* Middle section (banner) */
+section.middle-section {
+    background-color: white;
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: left center;
+    padding: clamp(2rem, 8vw, 4rem) 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    min-height: 150px;
+    width: 100%;
+}
+
+section.middle-section h4 {
+    margin-left: 1rem;
+    color: black;
+    padding: 0.5rem;
+}
+/* Low section (discounts and catalog) */
+section.low-section {
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+section.Contact-info {
+margin:0rem;
+padding-right: 30rem;
+}
+
+h1.subtitle {
+display: inline-flex;
+flex-direction: row;
+
+}
+div.Contact-info-div{
+    margin-right: -170%;
+}
+div.horarios {
+padding-left: 75%;
+margin-top: -17%;
+
+}
+
+iframe {
+width: 100%;
+height: 450px;
+}
+/* Catalog section */
+section.catalog {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+section.catalog::-webkit-scrollbar {
+    height: 6px;
+}
+
+section.catalog::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+section.catalog::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+section.catalog::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+section.catalog h1 {
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+section.catalog li.first_row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    max-width: 100%;
+}
+
+section.catalog li.first_row div {
+    flex: 0 0 clamp(70px, 18vw, 120px);
+    margin: 0.3rem;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: clamp(0.8rem, 3vw, 1.5rem);
+    min-height: 70px;
+    position: relative;
+    text-indent: -9999px;
+    z-index: 0; /* Establish stacking context */
+    overflow: visible; /* Prevent clipping */
+}
+
+section.catalog li.first_row div::after {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: clamp(0.6rem, 1.5vw, 0.8rem);
+    text-align: center;
+    padding: 0.3rem;
+    text-transform: capitalize;
+    line-height: 1.2;
+    z-index: 1000; /* Higher z-index for safety */
+    display: block;
+}
+
+section.catalog li.first_row div:hover {
+    transform: scale(1.1);
+}
+
+section.catalog li.first_row .cholo {
+    background-image: url("../images/cholo_hat.jpg");
+}
+
+section.catalog li.first_row .rancho {
+    background-image: url("../images/rancho_hat.jpg");
+}
+
+section.catalog li.first_row .fresones {
+    background-image: url("../images/fresa_hat.jpg");
+}
+
+section.catalog li.first_row .michael_cat {
+    background-image: url("../images/michael_cat.jpg");
+}
+
+/* Footer */
+footer {
+    background-color: rgb(255, 121, 121);
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0.3rem 0.5rem;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Small screens (≤600px, e.g., mobile) */
+@media screen and (max-width: 600px) {
+    header.banner {
+        flex-direction: row;
+        padding: 0.5rem 0;
+        position: relative;
+    }
+
+    header.banner .toggle-button {
+        display: block;
+    }
+
+    header.banner ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        padding: 0.5rem 0;
+    }
+
+    header.banner ul.active {
+        display: flex;
+    }
+
+    header.banner ul li {
+        margin: 0.3rem 0;
+        padding: 0.5rem 1rem;
+        background-color: rgba(255, 255, 255, 0.9);
+        border: 1px solid #ccc;
+        width: 80%;
+        text-align: center;
+    }
+
+    section.futureHats {
+        gap: 0.3rem;
+    }
+
+    section.futureHats li {
+        flex: 0 0 clamp(70px, 22vw, 100px);
+        padding: 0.8rem;
+        min-height: 70px;
+    }
+
+    section.middle-section {
+        padding: 1rem 0;
+        background-size: 100% auto;
+        min-height: 120px;
+    }
+
+    section.middle-section h4 {
+        margin-left: 0.5rem;
+        font-size: clamp(0.8rem, 1.8vw, 1rem);
+    }
+
+    section.catalog {
+        gap: 0.3rem;
+    }
+
+    section.catalog li.first_row div {
+        flex: 0 0 clamp(60px, 22vw, 90px);
+        padding: 0.6rem;
+        min-height: 60px;
+    }
+
+    section.catalog li.first_row div::after {
+        font-size: clamp(0.5rem, 1.3vw, 0.7rem);
+        padding: 0.2rem;
+    }
+
+    section.low-section div.discounts h4 {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+}
+
+/* Medium screens (601px–1200px, e.g., tablets, small laptops) */
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    header.banner {
+        padding: 0.8rem 0;
+    }
+
+    section.futureHats li {
+        flex: 0 0 clamp(90px, 18vw, 140px);
+        padding: 1.2rem;
+    }
+
+    section.catalog li.first_row div {
+        flex: 0 0 clamp(80px, 18vw, 120px);
+        padding: 1.2rem;
+    }
+
+    section.middle-section {
+        padding: 2rem 0;
+    }
+}
+
+/* Large screens (>1200px, e.g., large monitors) */
+@media screen and (min-width: 1201px) {
+    section.futureHats li {
+        flex: 0 0 clamp(100px, 18vw, 160px);
+    }
+
+    section.catalog li.first_row div {
+        flex: 0 0 clamp(90px, 15vw, 140px);
+    }
+
+    section.middle-section {
+        padding: 3rem 0;
     }
 
     header.banner {
-
-        .logo a {
-            background: rgb(190, 39, 39);
-            display: inline-flex;
-            height: 60px;
-            width: 60px;
-            text-indent: -9999px;
-            background-image: url("images/Logo.jpg");
-            background-size: 60px;
-            background-repeat: no-repeat;
-            position: relative;
-            border-radius: 50%;
-        }
-
-        ul {
-
-            li {
-                a {
-                    text-decoration: none;
-                    color: black;
-                }
-
-                display: inline-block;
-                margin: 20px;
-                background-color: white;
-                text-decoration: none;
-            }
-
-            margin: 0;
-            padding: 0px;
-            list-style-type: none;
-            background-color:white;
-        }
-
-        background-color: white;
-        padding-left: 2.5cm;
-        padding-right: 2.5cm;
-        background-size: 100%;
-        color: aqua;
+        padding: 1rem 0;
     }
-
-    main {
-
-        section.futureHats {
-
-            li {
-                margin-right: 10%;
-                margin-top: 80px;
-                display: inline-block;
-            }
-
-            li.mostRecent {
-                background-color: white;
-                background-image: url("/images/gorra_roja.jpg");
-                text-indent: -999990px;
-                padding: 60px;
-                background-repeat: no-repeat;
-                background-size: 100%;
-            }
-
-            li.recent {
-                background-color: white;
-                background-image: url("/images/gorra_azul.jpg");
-                text-indent: -999999990px;
-                padding: 60px;
-                background-repeat: no-repeat;
-                background-size: 100%;
-                display: flex;
-                flex-direction: column;
-            }
-
-            li.notRecent {
-                background-color: white;
-                background-image: url("/images/gorra_amarilla.jpg");
-                text-indent: -999999px;
-                padding: 60px;
-                background-repeat: no-repeat;
-                background-size: 100%;
-                display: flex;
-                flex-direction: column;
-            }
-
-            li:hover {
-                transform: scale(2)scaleX(-1)
-            }
-
-            div {
-
-                h1 {
-                    background-color: white;
-                    font-size: xx-large;
-                    font-family: Arial, Helvetica, sans-serif;
-                    margin-top: -50px;
-                }
-
-            }
-
-            padding: 150px;
-            display: flex;
-            flex-direction: row;
-            background-color: white;
-            margin: 5%;
-            margin-bottom: -80px;
-        }
-
-        section.middle-section {
-            background-color: white;
-            background-image: url("images/banner.jpg");
-            background-repeat: no-repeat;
-            align-items: center;
-            background-size: 1950px;
-            padding: 200px;
-            display: flex;
-            flex-direction: row;
-        }
-
-        div.discounts {
-    background-color:rgb(255, 193, 122);
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: .1%;
-    padding-left: 45%;
-    margin-top: -15px;
-            
-        }
-        section.low-section {
-
-
-
-            section.catalog {
-
-                li.first_row {
-
-                    div {
-                        color: black;
-                        background-color: white;
-                        margin: 2%;
-                        display: inline-block;
-                        margin-top: -1cm;
-                    }
-
-                    div:hover {
-                        transform: scale(1.5) scaleX(-1);
-
-                    }
-
-                    .cholo {
-                        background-image: url("images/cholo_hat.jpg");
-                        padding: 100px;
-                        background-repeat: no-repeat;
-                        background-size: 100%;
-                        text-indent: -999990px;
-                    }
-
-                    .rancho {
-                        background-image: url("images/rancho_hat.jpg");
-                        padding: 100px;
-                        background-repeat: no-repeat;
-                        background-size: 100%;
-                        text-indent: -9999999999px
-                    }
-
-                    .fresones {
-                        background-image: url("images/fresa_hat.jpg");
-                        padding: 100px;
-                        background-repeat: no-repeat;
-                        background-size: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        text-indent: -999999999999px
-                    }
-
-                    .michael_cat {
-                        background-image: url("images/michael_cat.jpg");
-                        padding: 100px;
-                        background-repeat: no-repeat;
-                        background-size: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        text-indent: -999999999999px
-                    }
-
-                    color: black;
-                    background-color: white;
-                    margin: 5%;
-                    margin-right: -750px;
-                    margin-top:-1cm;
-                    display: flex;
-                    flex-direction:row;
-                    flex-wrap: wrap;
-
-                }
-
-                h1 {
-                    color: black;
-                    background-color: white;
-                    margin-top: -4.5cm;
-                    margin-left: -3.5cm;
-                    font-size: xx-large;
-
-                }
-
-                padding: 10%;
-                padding-right: 900px;
-                padding-bottom:00px;
-                display: inline-flex;
-                flex-direction:row;
-                background-color:white;
-
-            }
-
-            padding: 150px;
-            display: flex;
-            flex-direction: row;
-            background-color: white;
-
-            section.Contact-info {
-                div {
-                    h1.subtitle {
-                        padding: 10%;
-                        padding-right: 900px;
-                        padding-bottom: 00px;
-                        display: inline-flex;
-                        flex-direction: row;
-                        background-color: white;
-                    }
-
-                    div.horarios {
-                        padding-left: 75%;
-                        margin-top: -10%;
-
-                    }
-
-                    iframe {
-                        width: 100%;
-                        height: 450px;
-                    }
-
-                    margin-top: -10%;
-                    background-color:transparent;
-                }
-            }
-                padding-left: 10%;
-                padding-right: 10%;
-        }
-
-        background-color: white;
-        color: black;
-        
-    }
-
-    footer {
-        background-color: transparent;
-        padding: 40px;
-
-        ul {
-
-            li {
-                margin-left: 15%;
-                display: inline-block;
-
-            }
-        }
-    }
-
-    background-color:rgb(255, 193, 122);
-    font-family: Arial,
-    Helvetica,
-    sans-serif;
-    color:black;
-    margin: 0;
-    padding: 0;
 }

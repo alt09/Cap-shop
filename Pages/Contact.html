@@ -1,73 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>
-        Contact
-    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Cap Shop</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
-
 <body>
     <div class="adds">
-        <h4>
-            comming soon 5% discount
-        </h4>
+        <h4>Coming soon 5% discount</h4>
     </div>
 
-    <header class=" banner">
-        <nav>
-            <ul>
-                <li class="logo">
-                    <a href="../Index.html">
-                        Cap Shop Logo
-                    </a>
-                </li>
-                <li>
-                    <a href="../Index.html">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="Contact.html">
-                        Contact
-                    </a>
-                </li>
-
-
-                <li>
-                    <a href="Locations.html">
-                        Locations
-                    </a>
-                </li>
-
-                <li>
-                    <a>
-                        Accessories
-                    </a>
-                </li>
-
-                <li>
-                    <a>
-                        Collections
-                    </a>
-                </li>
-
-            </ul>
-    </header>
-    <main class="main">
-
-        <section class="middle-section"></section>
-
-        <div class="discounts">
-            <h3>
-                4%-75% off on used hats
-            </h3>
+    <header class="banner">
+        <div class="logo">
+            <a href="../Index.html">Cap Shop Logo</a>
         </div>
+        <button class="toggle-button">☰</button>
+        <ul>
+            <li><a href="../Index.html">Home</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Locations.html">Locations</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Collections</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="contact-form">
+            <h1>Contact Us</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <section class="futureHats">
+            <div>
+                <h1>Coming Soon</h1>
+            </div>
+            <li class="mostRecent" data-text="Gorra Roja">Gorra Roja</li>
+            <li class="recent" data-text="Gorra Azul">Gorra Azul</li>
+            <li class="notRecent" data-text="Gorra Amarilla">Gorra Amarilla</li>
+        </section>
+
+        <section class="middle-section">
+            <h4>4%-75% off on unused hats</h4>
+        </section>
+
         <section class="low-section">
             <section class="Contact-info">
-
-                <div>
+                <div class="Contact-info-div">
                     <h1 class="subtitle"> Contact information </h1>
                     <h4> Email: andreslaratrevino@gmail.com</h4>
                     <h4>
@@ -90,24 +80,17 @@
             </section>
         </section>
     </main>
-    <footer class=" contentInfo">
-        lol this is a foot?
-        <section class=contact-info>
-            <ul>
-                <li>
-                    Terms and conditions
-                </li>
-                <li>
-                    Privacy policy
-                </li>
-                <li>
-                    FAQ
-                </li>
-                <li>
-                    About us
-                </li>
-            </ul>
-        </section>
+
+    <footer>
+        <p>lol this is a foot?</p>
+        <ul>
+            <li><a href="#">Terms and conditions</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">About us</a></li>
+        </ul>
     </footer>
 
+    <script src="../script.js"></script>
 </body>
+</html>
