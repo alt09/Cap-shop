@@ -187,7 +187,7 @@ section.middle-section h4 {
     color: black;
     padding: 0.5rem;
 }
-/* Low section (discounts and catalog) */
+/* Low section (discounts, catalog and accessories) */
 section.low-section {
     padding: 1.5rem 0;
     display: flex;
@@ -312,7 +312,14 @@ section.catalog li.first_row .fresones {
 section.catalog li.first_row .michael_cat {
     background-image: url("../images/michael_cat.jpg");
 }
-
+/* Accessories*/
+ul.Accessories{
+    background-color: black;
+    color:white;
+}
+ul.Accessories li.grid_item{ 
+background-color: aqua;
+}
 /* Footer */
 footer {
     background-color: rgb(255, 121, 121);
