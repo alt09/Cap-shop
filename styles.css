@@ -314,11 +314,19 @@ section.catalog li.first_row .michael_cat {
 }
 /* Accessories*/
 ul.Accessories{
-    background-color: black;
+    background-color: transparent;
+    background-size: contain;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
     color:white;
+    margin-left: 12.5rem;
+    margin-right: 12.5rem;
+    
 }
 ul.Accessories li.grid_item{ 
-background-color: aqua;
+background-color: transparent;
+padding: 0.5rem;
 }
 /* Footer */
 footer {
